@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3eae3;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 95vh;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 33px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.pef-img {
+    width: 100%;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.pef-details {
+    width: 100%;
+    padding: 30px;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    background-color: #368266;
+    color: white;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #193e30;
+    cursor: pointer;
+}
+
+.product,
+.sales-price,
+.disc-price {
+    margin: 0;
+}
+
+.sales-price {
+    color: #368266;
+    font-family: 'DM Serif Text', serif;
+}
+
+.product {
+    font-family: monospace;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+p {
+    color: rgb(162, 162, 162);
+}
+
+.product-name {
+    font-family: 'DM Serif Text', serif;
+    ;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+.disc-price {
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(162, 162, 162);
+    text-decoration: line-through;
+    font-family: 'DM Serif Text', serif;
+}
+
+.discription {
+    font-size: 15px;
+}
+
+@media (max-width: 414px) {
+    .container {
+        display: block;
+        width: 90vw;
+        height: 90vh;
+    }
+    .pef-img {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px 10px 0 0;
+    }
+    .attribution {
+        margin-top: 97vh;
+    }
+}
